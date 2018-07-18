@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="{5AE5540E-6012-4E1F-9B44-2044C094A050}" Language="1033" Manufacturer="PUT-COMPANY-NAME-HERE" Name="PUT-PRODUCT-NAME-HERE" UpgradeCode="{D888BB6F-E58B-4FFC-9379-B341E926A43E}" Version="1.0.0.0">
+        <Package Compressed="yes" InstallerVersion="200" />
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="dirC53D8F2CE9642C95B2198CBB3FC4F1DD" Name="MSI_BuildFolder">
+                <Component Id="cmp954450BDAA8CC01089006D6B7104F667" Guid="{33A59F53-8CD9-452C-9501-C66B62F1780D}">
+                    <File Id="fil3C62F44CAD6739F2113E226433207449" KeyPath="yes" Source="SourceDir\LaunchKMT.exe" />
+                </Component>
+                <Component Id="cmp48241E5D804EDAF591909C6620907892" Guid="{454B7064-99F3-452B-9A7F-EBC23E712838}">
+                    <File Id="filD6781C12B48882ED26140D10963B96DD" KeyPath="yes" Source="SourceDir\InstallService.exe" />
+                </Component>
+            </Directory>
+        </Directory>
+        <Feature Id="ProductFeature" Level="1" Title="PUT-FEATURE-TITLE-HERE" />
+        <Media Id="1" Cabinet="product.cab" EmbedCab="yes" />
+    </Product>
+</Wix>
